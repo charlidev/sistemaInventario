@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(135deg,#b91116, #e24622, #841816, #e8641c);
+    background-size: 200%;
+    animation: fondoanimado 7s infinite;
+}
+
+@keyframes fondoanimado {
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+
+.login {
+    width: 360px;
+    height: min-content;
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 8px 8px 60px 5px rgba(0,0,0,0.5);    
+    /* border: 1px solid rgba(255, 255, 255, 0.5) */
+    ;
+}
+
+.login h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.login form {
+    font-size: 20px;
+}
+
+.login form .form-group {
+    margin-bottom: 12px;
+}
+
+.login form input[type="submit"] {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.boton{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    width: 100%;
+    border-style: none;
+    height: 40px;
+    color: white;
+    transition: 0.3s;
+}
+
+.boton:hover{
+    transform: scale(1.05);
+}
+
+.form-control{
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-style: none;
+}
