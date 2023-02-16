@@ -12,7 +12,7 @@
     }
 
     if (sqlsrv_has_rows($stmt)) {
-        header("Location: inicio.html");
+        header("Location: ../inicio.html");
     }else {
         echo "Usuario o contraseña incorrectos";
     }
